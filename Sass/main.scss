@@ -1,0 +1,138 @@
+@import "config";
+
+section.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-container {
+    width: 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .right-side {
+    width: 70%;
+
+    .top-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-family: $font-alef;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-main;
+      }
+      .notifications-button-container {
+        width: 40px;
+        height: 40px;
+
+        .notifications-button {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border: 2px solid $primary-main;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $primary-light;
+          }
+
+          img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .tabs-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+
+      .tab-button {
+        width: 31%;
+        background-color: $grey-light;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 0;
+        cursor: pointer;
+        border: none;
+        font-size: 1rem;
+
+        &:hover {
+          background-color: $grey-main;
+        }
+
+        &.active {
+          background-color: $primary-main;
+          color: white;
+
+          &:hover {
+            background-color: $primary-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.tab-content {
+  display: none;
+
+  &#overview {
+    display: block;
+  }
+
+  &#overview {
+    .cards-container {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      .date-card {
+        width: 25%;
+        margin-right: 20px;
+        border: 2px solid $grey-main;
+        border-radius: 10px;
+        text-align: center;
+        color: $primary-main;
+        padding: 20px 0;
+
+        img {
+          width: 20px;
+        }
+        p#current-date {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        p.year {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+      .green-card,
+      .blue-card,
+      .red-card {
+        width: 22%;
+        margin-left: 10px;
+        text-align: center;
+        border: 2px solid $grey-main;
+        border-radius: 10px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}

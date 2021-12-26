@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Inter:wght@200;300;400;500&family=Lateef&family=Roboto:wght@100;300;400;500&display=swap");
+
+$grey-light: #efefef;
+$grey-main: #d4d4d4;
+$grey-dark: #858586;
+$primary-light: #d3dfff;
+$primary-main: #132c70;
+$primary-dark: #0c1b54;
+$primary-darker: #0a1644;
+$orange-main: #f3c8a6;
+
+$font-alef: Alef, sans-serif;
+$font-inter: Inter, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-alef;
+}
+
+body {
+  padding: 40px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>KSA event dashboard</title>
+</head>
+
+<body>
+
+  <section class="header">
+    <div class="logo-container">
+      <img src="./images/logo.png" alt="Chaumet">
+    </div>
+    <div class="right-side">
+      <div class="top-container">
+        <p>Hello Team,</p>
+        <div class="notifications-button-container">
+          <div class="notifications-button">
+            <img src="./icons/notification.png" alt="notifications">
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-container">
+        <button onclick="showSection(event, 'overview')" class="tab-button active">
+          <p>Overview</p>
+        </button>
+        <button onclick="showSection(event, 'attendees')" class="tab-button">
+          <p>Attendees</p>
+        </button>
+        <button onclick="showSection(event, 'walk-ins')" class="tab-button">
+          <p>Walk-ins</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content" id="overview">
+    <div class="cards-container">
+      <div class="date-card">
+        <img src="./icons/calendar.png" alt="date">
+        <p id="current-date"></p>
+        <p class="month">JANUARY</p>
+        <p class="year">2022</p>
+      </div>
+
+      <div class="green-card">
+        <img src="./icons/check.png" alt="present">
+        <p class="number">14</p>
+        <p class="sub-text">PRESENT</p>
+      </div>
+      <div class="red-card">
+        <img src="./icons/cross.png" alt="not arrived">
+        <p class="number">26</p>
+        <p class="sub-text">NOT ARRIVED</p>
+      </div>
+      <div class="blue-card">
+        <img src="./icons/total.png" alt="total">
+        <p class="number">40</p>
+        <p class="sub-text">TOTAL</p>
+      </div>
+    </div>
+  </section>
+  <section class="tab-content" id="attendees">
+    attendees content here
+  </section>
+  <section class="tab-content" id="walk-ins">
+    walk-ins content here
+  </section>
+
+  <script src="./javascript/main.js"></script>
+</body>
+
+</html>
