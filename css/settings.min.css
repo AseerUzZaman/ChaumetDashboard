@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Inter:wght@200;300;400;500&family=Lateef&family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Alef, sans-serif;
+}
+
+body {
+  padding: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body .settings-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .settings-container h1 {
+  font-family: Inter, sans-serif;
+  font-size: 2rem;
+  color: #132c70;
+  margin-bottom: 50px;
+}
+
+body .settings-container a {
+  display: block;
+  background-color: #efefef;
+  color: black;
+  padding: 10px 30px;
+  width: 300px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}

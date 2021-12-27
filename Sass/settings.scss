@@ -1,0 +1,27 @@
+@import "config";
+
+body {
+  .settings-container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-family: $font-inter;
+      font-size: 2rem;
+      color: $primary-main;
+      margin-bottom: 50px;
+    }
+    a {
+      display: block;
+      background-color: $grey-buttons;
+      color: black;
+      padding: 10px 30px;
+      width: 300px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+  }
+}
