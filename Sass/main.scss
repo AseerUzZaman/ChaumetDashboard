@@ -7,6 +7,7 @@ section.header {
 
   .logo-container {
     width: 20%;
+    margin-left: 20px;
 
     img {
       width: 100%;
@@ -148,6 +149,7 @@ section.tab-content {
           border-radius: 500px;
         }
         p.sub-text {
+          font-family: $font-inter;
           font-size: 0.7rem;
           color: $grey-dark;
         }
@@ -159,6 +161,45 @@ section.tab-content {
       .red-card .number {
         border-color: red;
         color: red;
+      }
+    }
+  }
+}
+
+.table-container {
+  margin-top: 50px;
+  .title {
+    background-color: $primary-main;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: $font-inter;
+
+    thead {
+      th {
+        background-color: $primary-light;
+        color: $primary-main;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+    }
+    tbody {
+      width: 100%;
+      color: $grey-dark;
+
+      tr {
+        border-bottom: 1px solid $grey-dark;
+
+        td {
+          padding: 10px 0;
+          border: none;
+        }
       }
     }
   }

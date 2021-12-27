@@ -25,6 +25,7 @@ section.header {
 
 section.header .logo-container {
   width: 20%;
+  margin-left: 20px;
 }
 
 section.header .logo-container img {
@@ -97,7 +98,7 @@ section.header .right-side .tabs-container {
 
 section.header .right-side .tabs-container .tab-button {
   width: 31%;
-  background-color: #efefef;
+  background-color: #f5f8ff;
   color: black;
   border-radius: 5px;
   padding: 10px 0;
@@ -199,8 +200,9 @@ section.tab-content#overview .cards-container .red-card .number {
 section.tab-content#overview .cards-container .green-card p.sub-text,
 section.tab-content#overview .cards-container .blue-card p.sub-text,
 section.tab-content#overview .cards-container .red-card p.sub-text {
+  font-family: Inter, sans-serif;
   font-size: 0.7rem;
-  color: #858586;
+  color: #7e7e7e;
 }
 
 section.tab-content#overview .cards-container .green-card .number {
@@ -211,4 +213,44 @@ section.tab-content#overview .cards-container .green-card .number {
 section.tab-content#overview .cards-container .red-card .number {
   border-color: red;
   color: red;
+}
+
+.table-container {
+  margin-top: 50px;
+}
+
+.table-container .title {
+  background-color: #132c70;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+
+.table-container table thead th {
+  background-color: #d3dfff;
+  color: #132c70;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.table-container table tbody {
+  width: 100%;
+  color: #7e7e7e;
+}
+
+.table-container table tbody tr {
+  border-bottom: 1px solid #7e7e7e;
+}
+
+.table-container table tbody tr td {
+  padding: 10px 0;
+  border: none;
 }
