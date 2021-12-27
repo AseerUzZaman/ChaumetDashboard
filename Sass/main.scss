@@ -79,7 +79,7 @@ section.header {
 section.tab-content {
   display: none;
 
-  &#overview {
+  &#walk-ins {
     display: block;
   }
 
@@ -152,6 +152,85 @@ section.tab-content {
       }
     }
   }
+
+  &#walk-ins {
+    margin-top: 50px;
+    .heading {
+      background-color: $primary-main;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 20px 50px;
+      border-radius: 10px 10px 0 0;
+    }
+    .form-body {
+      padding: 100px 50px;
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .title-container {
+          display: flex;
+          width: 100%;
+
+          label {
+            font-size: 1.2rem;
+            color: $grey-dark;
+            margin-right: 10px;
+            padding: 5px;
+          }
+          p {
+            margin: 5px;
+            margin-left: 20px;
+            font-size: 1.2rem;
+          }
+          input.checkbox {
+            width: 20px;
+            height: 20px;
+            margin-top: 7px;
+          }
+        }
+
+        input {
+          background-color: white;
+          font-size: 1.5rem;
+          padding: 10px 30px;
+          margin: 10px 0;
+          border: 1px solid $grey-main;
+          border-radius: 5px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        input.first-name,
+        input.last-name,
+        input.email {
+          width: 100%;
+        }
+        input.phone,
+        select#province {
+          width: 48%;
+        }
+        select#province {
+          background-color: white;
+          font-size: 1.5rem;
+          padding: 10px 30px;
+          margin: 10px 0;
+          border: 1px solid $grey-main;
+          border-radius: 5px;
+          appearance: none;
+
+          &:invalid {
+            color: $grey-dark;
+          }
+        }
+      }
+    }
+  }
 }
 
 section.footer {
@@ -201,8 +280,9 @@ section.footer {
   .title {
     background-color: $primary-main;
     color: white;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 10px 10px 0 0;
   }
   table {

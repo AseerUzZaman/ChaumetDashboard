@@ -112,7 +112,7 @@ section.tab-content {
   display: none;
 }
 
-section.tab-content#overview {
+section.tab-content#walk-ins {
   display: block;
 }
 
@@ -203,6 +203,103 @@ section.tab-content#overview .cards-container .red-card .number {
   color: red;
 }
 
+section.tab-content#walk-ins {
+  margin-top: 50px;
+}
+
+section.tab-content#walk-ins .heading {
+  background-color: #132c70;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+section.tab-content#walk-ins .form-body {
+  padding: 100px 50px;
+}
+
+section.tab-content#walk-ins .form-body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.tab-content#walk-ins .form-body form .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+section.tab-content#walk-ins .form-body form .title-container label {
+  font-size: 1.2rem;
+  color: #7e7e7e;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+section.tab-content#walk-ins .form-body form .title-container p {
+  margin: 5px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+section.tab-content#walk-ins .form-body form .title-container input.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+}
+
+section.tab-content#walk-ins .form-body form input {
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+}
+
+section.tab-content#walk-ins .form-body form input:focus {
+  outline: none;
+}
+
+section.tab-content#walk-ins .form-body form input.first-name,
+section.tab-content#walk-ins .form-body form input.last-name,
+section.tab-content#walk-ins .form-body form input.email {
+  width: 100%;
+}
+
+section.tab-content#walk-ins .form-body form input.phone,
+section.tab-content#walk-ins .form-body form select#province {
+  width: 48%;
+}
+
+section.tab-content#walk-ins .form-body form select#province {
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+section.tab-content#walk-ins .form-body form select#province:invalid {
+  color: #7e7e7e;
+}
+
 section.footer {
   right: 40px;
   display: -webkit-box;
@@ -264,8 +361,9 @@ section.footer button.footer-button img {
 .table-container .title {
   background-color: #132c70;
   color: white;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding: 20px;
+  padding: 20px 50px;
   border-radius: 10px 10px 0 0;
 }
 
