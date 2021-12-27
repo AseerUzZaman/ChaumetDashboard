@@ -25,6 +25,7 @@ section.header {
 
 section.header .logo-container {
   width: 20%;
+  margin-left: 20px;
 }
 
 section.header .logo-container img {
@@ -68,10 +69,6 @@ section.header .right-side .top-container .notifications-button-container .notif
   cursor: pointer;
 }
 
-section.header .right-side .top-container .notifications-button-container .notifications-button:hover {
-  background-color: #d3dfff;
-}
-
 section.header .right-side .top-container .notifications-button-container .notifications-button img {
   position: absolute;
   left: 50%;
@@ -97,7 +94,7 @@ section.header .right-side .tabs-container {
 
 section.header .right-side .tabs-container .tab-button {
   width: 31%;
-  background-color: #efefef;
+  background-color: #f5f8ff;
   color: black;
   border-radius: 5px;
   padding: 10px 0;
@@ -106,17 +103,9 @@ section.header .right-side .tabs-container .tab-button {
   font-size: 1rem;
 }
 
-section.header .right-side .tabs-container .tab-button:hover {
-  background-color: #d4d4d4;
-}
-
 section.header .right-side .tabs-container .tab-button.active {
   background-color: #132c70;
   color: white;
-}
-
-section.header .right-side .tabs-container .tab-button.active:hover {
-  background-color: #0c1b54;
 }
 
 section.tab-content {
@@ -137,6 +126,7 @@ section.tab-content#overview .cards-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 20px;
 }
 
 section.tab-content#overview .cards-container .date-card {
@@ -171,10 +161,172 @@ section.tab-content#overview .cards-container .red-card {
   text-align: center;
   border: 2px solid #d4d4d4;
   border-radius: 10px;
+  padding: 20px 0;
+  color: #132c70;
 }
 
 section.tab-content#overview .cards-container .green-card img,
 section.tab-content#overview .cards-container .blue-card img,
 section.tab-content#overview .cards-container .red-card img {
   width: 20px;
+}
+
+section.tab-content#overview .cards-container .green-card .number,
+section.tab-content#overview .cards-container .blue-card .number,
+section.tab-content#overview .cards-container .red-card .number {
+  font-family: Inter, sans-serif;
+  width: 70px;
+  height: 70px;
+  margin: 20px auto;
+  padding-top: 12px;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 3px solid;
+  border-radius: 500px;
+}
+
+section.tab-content#overview .cards-container .green-card p.sub-text,
+section.tab-content#overview .cards-container .blue-card p.sub-text,
+section.tab-content#overview .cards-container .red-card p.sub-text {
+  font-family: Inter, sans-serif;
+  font-size: 0.7rem;
+  color: #7e7e7e;
+}
+
+section.tab-content#overview .cards-container .green-card .number {
+  border-color: green;
+  color: green;
+}
+
+section.tab-content#overview .cards-container .red-card .number {
+  border-color: red;
+  color: red;
+}
+
+section.footer {
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #132c70;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+section.footer p {
+  width: 50%;
+}
+
+section.footer button.footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f5f8ff;
+  width: 25%;
+  padding: 10px;
+  margin: 5px;
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #132c70;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section.footer button.footer-button img {
+  width: 20px;
+}
+
+.table-container {
+  margin-top: 50px;
+  border-bottom: 1px solid #d4d4d4;
+  min-height: 500px;
+}
+
+.table-container .title {
+  background-color: #132c70;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+
+.table-container table thead th {
+  background-color: #d3dfff;
+  color: #132c70;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.table-container table tbody {
+  width: 100%;
+  color: #7e7e7e;
+  font-size: 0.8rem;
+}
+
+.table-container table tbody tr {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.table-container table tbody tr td {
+  padding: 10px 0;
+  border: none;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.pagination p {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #132c70;
+}
+
+.pagination button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-top: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }

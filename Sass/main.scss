@@ -7,6 +7,7 @@ section.header {
 
   .logo-container {
     width: 20%;
+    margin-left: 20px;
 
     img {
       width: 100%;
@@ -38,10 +39,6 @@ section.header {
           border-radius: 10px;
           cursor: pointer;
 
-          &:hover {
-            background-color: $primary-light;
-          }
-
           img {
             position: absolute;
             left: 50%;
@@ -70,17 +67,9 @@ section.header {
         border: none;
         font-size: 1rem;
 
-        &:hover {
-          background-color: $grey-main;
-        }
-
         &.active {
           background-color: $primary-main;
           color: white;
-
-          &:hover {
-            background-color: $primary-dark;
-          }
         }
       }
     }
@@ -99,6 +88,8 @@ section.tab-content {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
+      margin-top: 20px;
+
       .date-card {
         width: 25%;
         margin-right: 20px;
@@ -128,11 +119,144 @@ section.tab-content {
         text-align: center;
         border: 2px solid $grey-main;
         border-radius: 10px;
+        padding: 20px 0;
+        color: $primary-main;
 
         img {
           width: 20px;
         }
+        .number {
+          font-family: $font-inter;
+          width: 70px;
+          height: 70px;
+          margin: 20px auto;
+          padding-top: 12px;
+          font-size: 2rem;
+          font-weight: 500;
+          border: 3px solid;
+          border-radius: 500px;
+        }
+        p.sub-text {
+          font-family: $font-inter;
+          font-size: 0.7rem;
+          color: $grey-dark;
+        }
+      }
+      .green-card .number {
+        border-color: green;
+        color: green;
+      }
+      .red-card .number {
+        border-color: red;
+        color: red;
       }
     }
+  }
+}
+
+section.footer {
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-main;
+  color: white;
+  font-family: $font-inter;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  p {
+    width: 50%;
+  }
+  button.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $grey-light;
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+    font-family: $font-inter;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $primary-main;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.table-container {
+  margin-top: 50px;
+  border-bottom: 1px solid $grey-main;
+  min-height: 500px;
+
+  .title {
+    background-color: $primary-main;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: $font-inter;
+
+    thead {
+      th {
+        background-color: $primary-light;
+        color: $primary-main;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+    }
+    tbody {
+      width: 100%;
+      color: $grey-dark;
+      font-size: 0.8rem;
+
+      tr {
+        border-bottom: 1px solid $grey-main;
+
+        td {
+          padding: 10px 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0;
+
+  p {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $primary-main;
+  }
+  button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
   }
 }
