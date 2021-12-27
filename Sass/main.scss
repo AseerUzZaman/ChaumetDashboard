@@ -1,5 +1,80 @@
 @import "config";
 
+.notifications-container {
+  position: absolute;
+  background-color: white;
+  top: 100px;
+  right: 40px;
+  text-align: center;
+  box-shadow: 8px 8px 68px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 20px 30px;
+  width: 400px;
+
+  &.close {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    p {
+      font-family: $font-inter;
+      font-weight: 700;
+    }
+    button.read {
+      background-color: transparent;
+      border: none;
+      color: #103188;
+      font-family: $font-inter;
+      cursor: pointer;
+    }
+  }
+
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid $grey-main;
+
+    .image-container {
+      width: 20%;
+
+      .img {
+        width: 50px;
+        height: 50px;
+        border-radius: 500px;
+        background-color: #c4c4c4;
+      }
+    }
+    .text-container {
+      width: 78%;
+      color: $grey-dark;
+
+      p.title {
+        font-size: 1.1rem;
+      }
+      p.time {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  button.clear {
+    background-color: transparent;
+    border: none;
+    color: #103188;
+    font-family: $font-inter;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
 section.header {
   display: flex;
   align-items: center;
@@ -33,6 +108,7 @@ section.header {
 
         .notifications-button {
           position: relative;
+          background-color: white;
           width: 100%;
           height: 100%;
           border: 2px solid $primary-main;
@@ -59,8 +135,8 @@ section.header {
 
       .tab-button {
         width: 31%;
-        background-color: $grey-light;
-        color: black;
+        background-color: $grey-buttons;
+        color: $grey-dark;
         border-radius: 5px;
         padding: 10px 0;
         cursor: pointer;
@@ -70,6 +146,7 @@ section.header {
         &.active {
           background-color: $primary-main;
           color: white;
+          font-weight: 700;
         }
       }
     }

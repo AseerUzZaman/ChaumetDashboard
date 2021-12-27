@@ -17,3 +17,12 @@ function showSection(evt, tabName) {
 const currentDate = document.querySelector("#current-date");
 const d = new Date();
 currentDate.innerHTML = d.getDate();
+
+// Opening notifications
+function showNotifications() {
+  const notifications = document.querySelector(".notifications-container");
+
+  if (notifications.classList.contains("close"))
+    notifications.classList.remove("close");
+  else notifications.classList.add("close");
+}
