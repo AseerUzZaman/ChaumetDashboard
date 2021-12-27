@@ -581,11 +581,6 @@ section.footer button.footer-button img {
   border: none;
 }
 
-.table-container table tbody tr td input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-}
-
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
