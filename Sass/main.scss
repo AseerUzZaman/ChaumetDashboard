@@ -99,6 +99,8 @@ section.tab-content {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
+      margin-top: 20px;
+
       .date-card {
         width: 25%;
         margin-right: 20px;
@@ -128,10 +130,35 @@ section.tab-content {
         text-align: center;
         border: 2px solid $grey-main;
         border-radius: 10px;
+        padding: 20px 0;
+        color: $primary-main;
 
         img {
           width: 20px;
         }
+        .number {
+          font-family: $font-inter;
+          width: 70px;
+          height: 70px;
+          margin: 20px auto;
+          padding-top: 12px;
+          font-size: 2rem;
+          font-weight: 500;
+          border: 3px solid;
+          border-radius: 500px;
+        }
+        p.sub-text {
+          font-size: 0.7rem;
+          color: $grey-dark;
+        }
+      }
+      .green-card .number {
+        border-color: green;
+        color: green;
+      }
+      .red-card .number {
+        border-color: red;
+        color: red;
       }
     }
   }

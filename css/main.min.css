@@ -137,6 +137,7 @@ section.tab-content#overview .cards-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 20px;
 }
 
 section.tab-content#overview .cards-container .date-card {
@@ -171,10 +172,43 @@ section.tab-content#overview .cards-container .red-card {
   text-align: center;
   border: 2px solid #d4d4d4;
   border-radius: 10px;
+  padding: 20px 0;
+  color: #132c70;
 }
 
 section.tab-content#overview .cards-container .green-card img,
 section.tab-content#overview .cards-container .blue-card img,
 section.tab-content#overview .cards-container .red-card img {
   width: 20px;
+}
+
+section.tab-content#overview .cards-container .green-card .number,
+section.tab-content#overview .cards-container .blue-card .number,
+section.tab-content#overview .cards-container .red-card .number {
+  font-family: Inter, sans-serif;
+  width: 70px;
+  height: 70px;
+  margin: 20px auto;
+  padding-top: 12px;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 3px solid;
+  border-radius: 500px;
+}
+
+section.tab-content#overview .cards-container .green-card p.sub-text,
+section.tab-content#overview .cards-container .blue-card p.sub-text,
+section.tab-content#overview .cards-container .red-card p.sub-text {
+  font-size: 0.7rem;
+  color: #858586;
+}
+
+section.tab-content#overview .cards-container .green-card .number {
+  border-color: green;
+  color: green;
+}
+
+section.tab-content#overview .cards-container .red-card .number {
+  border-color: red;
+  color: red;
 }
