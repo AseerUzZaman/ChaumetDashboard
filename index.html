@@ -49,7 +49,7 @@
       </div>
 
       <div class="green-card">
-        <img src="./icons/check.png" alt="present">
+        <img src="./icons/check-box.png" alt="present">
         <p class="number">14</p>
         <p class="sub-text">PRESENT</p>
       </div>
@@ -199,16 +199,18 @@
           <option value="Riyadh Province">Riyadh Province</option>
           <option value="Tabuk Province">Tabuk Province</option>
         </select>
-        <input required type="text" name="phone" placeholder="Phone number" class="phone">
+        <input required type="number" name="phone" placeholder="Phone number" class="phone">
         <input required type="email" name="email" placeholder="Email" class="email">
 
         <p class="date-text">Select date</p>
-        <input type="date" name="date" class="date" min="2022-01-13" max="2022-01-24">
+        <input required type="date" name="date" class="date" min="2022-01-13" max="2022-01-24">
 
-        <!-- <div class="buttons-container">
-          <button class="discard">Discard</button>
-          <button class="confirm">Confirm</button>
-        </div> -->
+        <div class="buttons-wrapper">
+          <div class="buttons-container">
+            <button class="discard" type="reset"><img src="./icons/close.png" alt="Discard">Discard</button>
+            <button class="confirm" type="submit"><img src="./icons/check.png" alt="Confirm">Confirm</button>
+          </div>
+        </div>
 
       </form>
     </div>
