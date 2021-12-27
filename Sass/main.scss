@@ -175,6 +175,7 @@ section.tab-content {
         .title-container {
           display: flex;
           width: 100%;
+          margin-bottom: 20px;
 
           label {
             font-size: 1.2rem;
@@ -227,6 +228,26 @@ section.tab-content {
           &:invalid {
             color: $grey-dark;
           }
+        }
+        p.date-text {
+          margin-top: 30px;
+          width: 50%;
+          text-align: center;
+          font-size: 2rem;
+          font-family: $font-inter;
+          font-weight: 700;
+          color: $primary-main;
+        }
+        input.date {
+          margin-top: 40px;
+          width: 50%;
+          color: $primary-main;
+          font-family: $font-inter;
+          font-weight: 500;
+        }
+
+        .button-container {
+          width: 50%;
         }
       }
     }

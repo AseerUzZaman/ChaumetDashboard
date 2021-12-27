@@ -239,6 +239,7 @@ section.tab-content#walk-ins .form-body form .title-container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 section.tab-content#walk-ins .form-body form .title-container label {
@@ -298,6 +299,28 @@ section.tab-content#walk-ins .form-body form select#province {
 
 section.tab-content#walk-ins .form-body form select#province:invalid {
   color: #7e7e7e;
+}
+
+section.tab-content#walk-ins .form-body form p.date-text {
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: #132c70;
+}
+
+section.tab-content#walk-ins .form-body form input.date {
+  margin-top: 40px;
+  width: 50%;
+  color: #132c70;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+section.tab-content#walk-ins .form-body form .button-container {
+  width: 50%;
 }
 
 section.footer {
