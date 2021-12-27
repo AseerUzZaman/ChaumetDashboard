@@ -24,7 +24,7 @@ input[type="number"] {
 .notifications-container {
   position: absolute;
   background-color: white;
-  top: 100px;
+  top: 90px;
   right: 40px;
   text-align: center;
   -webkit-box-shadow: 8px 8px 68px rgba(0, 0, 0, 0.15);
@@ -510,7 +510,7 @@ section.footer p {
   width: 50%;
 }
 
-section.footer button.footer-button {
+section.footer a.footer-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,9 +531,10 @@ section.footer button.footer-button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 
-section.footer button.footer-button img {
+section.footer a.footer-button img {
   width: 20px;
 }
 

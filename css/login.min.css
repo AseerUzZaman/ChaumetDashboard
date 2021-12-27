@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Inter:wght@200;300;400;500&family=Lateef&family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Alef, sans-serif;
+}
+
+body {
+  padding: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.login-container img.logo {
+  width: 250px;
+}
+
+.login-container h1 {
+  font-family: Inter, sans-serif;
+  color: #132c70;
+  margin: 50px 0;
+}
+
+.login-container .username-container,
+.login-container .password-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-container .username-container img,
+.login-container .password-container img {
+  width: 20px;
+}
+
+.login-container .username-container input,
+.login-container .password-container input {
+  width: 85%;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.login-container .username-container input:focus,
+.login-container .password-container input:focus {
+  outline: none;
+}
+
+.login-container .password-container {
+  margin-bottom: 70px;
+}
+
+.login-container a {
+  padding: 10px 50px;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  background-color: #132c70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}

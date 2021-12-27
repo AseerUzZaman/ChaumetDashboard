@@ -3,7 +3,7 @@
 .notifications-container {
   position: absolute;
   background-color: white;
-  top: 100px;
+  top: 90px;
   right: 40px;
   text-align: center;
   box-shadow: 8px 8px 68px rgba(0, 0, 0, 0.15);
@@ -387,7 +387,7 @@ section.footer {
   p {
     width: 50%;
   }
-  button.footer-button {
+  a.footer-button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -402,6 +402,7 @@ section.footer {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 
     img {
       width: 20px;

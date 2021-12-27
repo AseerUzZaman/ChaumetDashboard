@@ -1,0 +1,58 @@
+@import "config";
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  img.logo {
+    width: 250px;
+  }
+
+  h1 {
+    font-family: $font-inter;
+    color: $primary-main;
+    margin: 50px 0;
+  }
+
+  .username-container,
+  .password-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid $grey-main;
+    width: 100%;
+    border-radius: 5px;
+
+    img {
+      width: 20px;
+    }
+    input {
+      width: 85%;
+      border: none;
+      font-size: 1.2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .password-container {
+    margin-bottom: 70px;
+  }
+  a {
+    padding: 10px 50px;
+    font-family: $font-inter;
+    font-size: 1.2rem;
+    background-color: $primary-main;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
