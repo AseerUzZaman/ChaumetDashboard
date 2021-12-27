@@ -122,7 +122,7 @@ section.tab-content {
   display: none;
 }
 
-section.tab-content#walk-ins {
+section.tab-content#overview {
   display: block;
 }
 
@@ -484,6 +484,11 @@ section.footer button.footer-button img {
 .table-container table tbody tr td {
   padding: 10px 0;
   border: none;
+}
+
+.table-container table tbody tr td input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
 }
 
 .pagination {

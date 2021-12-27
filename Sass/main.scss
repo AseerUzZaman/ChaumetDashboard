@@ -79,7 +79,7 @@ section.header {
 section.tab-content {
   display: none;
 
-  &#walk-ins {
+  &#overview {
     display: block;
   }
 
@@ -370,6 +370,11 @@ section.footer {
         td {
           padding: 10px 0;
           border: none;
+
+          input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }
