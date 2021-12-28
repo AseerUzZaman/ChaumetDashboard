@@ -235,6 +235,7 @@ section.tab-content#overview .cards-container {
 }
 
 section.tab-content#overview .cards-container .date-card {
+  position: relative;
   width: 25%;
   margin-right: 20px;
   border: 2px solid #d4d4d4;
@@ -242,6 +243,19 @@ section.tab-content#overview .cards-container .date-card {
   text-align: center;
   color: #132c70;
   padding: 20px 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+section.tab-content#overview .cards-container .date-card input.date-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
 }
 
 section.tab-content#overview .cards-container .date-card img {
