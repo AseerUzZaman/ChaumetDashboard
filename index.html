@@ -351,42 +351,72 @@
     <div class="heading">WALK-INS</div>
     <div class="form-body">
       <form action="">
-        <div class="title-container">
+
+        <div class="title-container" style="position: relative;">
           <label for="mr">
             Title
           </label>
           <p>Mr.</p>
-          <input class="checkbox" type="checkbox" name="mr" value=true>
+          <input onclick="changeTitle()" class="checkbox" id="mr" type="checkbox" name="mr" value=true>
           <p>Mrs.</p>
-          <input class="checkbox" type="checkbox" name="mr" value=false>
+          <input onclick="changeTitle()" class="checkbox" id="mrs" type="checkbox" name="mr" value=false>
+          <p class="error" id="title" style="top: 30px;">This field is required</p>
         </div>
-        <input required type="text" name="first-name" placeholder="First name" class="first-name">
-        <input required type="text" name="last-name" placeholder="Last name" class="last-name">
-        <select required name="province" id="province">
-          <option value="" selected hidden class="placeholder">Province</option>
-          <option value="Al-Bahah Province">Al-Bahah Province</option>
-          <option value="Al-Jawf Province">Al-Jawf Province</option>
-          <option value="Aseer Province">Aseer Province</option>
-          <option value="Eastern Province">Eastern Province</option>
-          <option value="Ha'il Province">Ha'il Province</option>
-          <option value="Jizan Province">Jizan Province</option>
-          <option value="Madinah Province">Madinah Province</option>
-          <option value="Makkah Province">Makkah Province</option>
-          <option value="Najran Province">Najran Province</option>
-          <option value="Qassim Province">Qassim Province</option>
-          <option value="Riyadh Province">Riyadh Province</option>
-          <option value="Tabuk Province">Tabuk Province</option>
-        </select>
-        <input required type="number" name="phone" placeholder="Phone number" class="phone">
-        <input required type="email" name="email" placeholder="Email" class="email">
 
-        <p class="date-text">Select date</p>
-        <input required type="date" name="date" class="date" min="2022-01-13" max="2022-01-24">
+        <div style="position: relative; width: 100%;">
+          <input onchange="setFirstName()" required type="text" name="first-name" placeholder="First name"
+            class="first-name">
+          <p class="error" id="first-name" style="top: 75px;">This field is required</p>
+        </div>
+
+        <div style="position: relative; width: 100%;">
+          <input onchange="setLastName()" required type="text" name="last-name" placeholder="Last name"
+            class="last-name">
+          <p class="error" id="last-name" style="top: 75px;">This field is required</p>
+        </div>
+
+        <div style="position: relative; width: 48%;">
+          <select onchange="setProvince()" required name="province" id="province" style="width: 100%">
+            <option value="" selected hidden class="placeholder">Province</option>
+            <option value="Al-Bahah Province">Al-Bahah Province</option>
+            <option value="Al-Jawf Province">Al-Jawf Province</option>
+            <option value="Aseer Province">Aseer Province</option>
+            <option value="Eastern Province">Eastern Province</option>
+            <option value="Ha'il Province">Ha'il Province</option>
+            <option value="Jizan Province">Jizan Province</option>
+            <option value="Madinah Province">Madinah Province</option>
+            <option value="Makkah Province">Makkah Province</option>
+            <option value="Najran Province">Najran Province</option>
+            <option value="Qassim Province">Qassim Province</option>
+            <option value="Riyadh Province">Riyadh Province</option>
+            <option value="Tabuk Province">Tabuk Province</option>
+          </select>
+          <p class="error" id="province" style="top: 65px;">This field is required</p>
+        </div>
+
+        <div style="position: relative; width: 48%">
+          <input onchange="setNumber()" required type="text" name="phone" placeholder="Phone number" class="phone">
+          <p class="error" id="phone" style="top: 75px;">Invalid phone number</p>
+        </div>
+
+        <div style="position: relative; width: 100%">
+          <input onchange="setEmail()" required type="email" name="email" placeholder="Email" class="email">
+          <p class="error" id="email" style="top: 75px;">Invalid email</p>
+        </div>
+
+        <div style="position: relative; width: 50%;">
+          <p class="date-text">Select date</p>
+          <p class="error" id="date" style="left: 80px;">This field is required</p>
+        </div>
+        <input onchange="setPickedDate()" required type="date" name="date" class="date" min="2022-01-13"
+          max="2022-01-24">
 
         <div class="buttons-wrapper">
           <div class="buttons-container">
-            <button class="discard" type="reset"><img src="./icons/close.png" alt="Discard">Discard</button>
-            <button class="confirm" type="submit"><img src="./icons/check.png" alt="Confirm">Confirm</button>
+            <button onclick="discard()" class="discard" type="reset"><img src="./icons/close.png"
+                alt="Discard">Discard</button>
+            <button onclick="validate()" class="confirm" type="submit"><img src="./icons/check.png"
+                alt="Confirm">Confirm</button>
           </div>
         </div>
 

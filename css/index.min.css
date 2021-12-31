@@ -21,6 +21,19 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+p.error {
+  display: none;
+  position: absolute;
+  left: 10px;
+  margin: 0 !important;
+  color: red;
+  font-size: 0.9rem !important;
+}
+
+p.error.show {
+  display: block;
+}
+
 .notifications-container {
   position: absolute;
   background-color: white;
@@ -217,7 +230,7 @@ section.tab-content {
   display: none;
 }
 
-section.tab-content#overview {
+section.tab-content#walk-ins {
   display: block;
 }
 
@@ -384,7 +397,7 @@ section.tab-content#walk-ins .form-body form input {
   background-color: white;
   font-size: 1.5rem;
   padding: 10px 30px;
-  margin: 10px 0;
+  margin: 20px 0;
   border: 1px solid #d4d4d4;
   border-radius: 5px;
 }
@@ -401,7 +414,7 @@ section.tab-content#walk-ins .form-body form input.email {
 
 section.tab-content#walk-ins .form-body form input.phone,
 section.tab-content#walk-ins .form-body form select#province {
-  width: 48%;
+  width: 100%;
 }
 
 section.tab-content#walk-ins .form-body form select#province {
@@ -422,7 +435,6 @@ section.tab-content#walk-ins .form-body form select#province:invalid {
 
 section.tab-content#walk-ins .form-body form p.date-text {
   margin-top: 30px;
-  width: 50%;
   text-align: center;
   font-size: 2rem;
   font-family: Inter, sans-serif;
