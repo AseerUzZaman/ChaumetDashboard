@@ -1,5 +1,33 @@
 @import "config";
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+
+  h1 {
+    color: $primary-main;
+    font-size: 3rem;
+  }
+  p {
+    color: black;
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  &.show {
+    display: block;
+  }
+}
+
 p.error {
   display: none;
   position: absolute;
@@ -169,7 +197,7 @@ section.header {
 section.tab-content {
   display: none;
 
-  &#overview {
+  &#walk-ins {
     display: block;
   }
 

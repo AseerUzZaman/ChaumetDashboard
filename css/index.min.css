@@ -21,6 +21,37 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.modal h1 {
+  color: #132c70;
+  font-size: 3rem;
+}
+
+.modal p {
+  color: black;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.modal.show {
+  display: block;
+}
+
 p.error {
   display: none;
   position: absolute;
@@ -230,7 +261,7 @@ section.tab-content {
   display: none;
 }
 
-section.tab-content#overview {
+section.tab-content#walk-ins {
   display: block;
 }
 

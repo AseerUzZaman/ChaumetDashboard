@@ -348,6 +348,10 @@
   </section>
 
   <section class="tab-content" id="walk-ins">
+    <div class="modal">
+      <h1>Registered!</h1>
+      <p>The registratoin was successful</p>
+    </div>
     <div class="heading">WALK-INS</div>
     <div class="form-body">
       <form action="">
@@ -415,7 +419,7 @@
           <div class="buttons-container">
             <button onclick="discard()" class="discard" type="reset"><img src="./icons/close.png"
                 alt="Discard">Discard</button>
-            <button onclick="validate()" class="confirm" type="submit"><img src="./icons/check.png"
+            <button class="confirm" type="button" onclick="showModal()"><img src="./icons/check.png"
                 alt="Confirm">Confirm</button>
           </div>
         </div>

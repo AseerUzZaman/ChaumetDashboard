@@ -68,7 +68,7 @@ function changeTitle() {
   }
 }
 
-// Set first name
+// Set values
 function setFirstName() {
   data.firstName = this.event.target.value;
 }
@@ -88,6 +88,7 @@ function setPickedDate() {
   data.date = this.event.target.value;
 }
 
+// Clear fields
 function discard() {
   const errors = document.querySelectorAll("p.error");
   errors.forEach((error) => {
@@ -103,6 +104,7 @@ function discard() {
   data.date = "";
 }
 
+// Validate fields
 function validate() {
   const titleError = document.querySelector("p.error#title");
   const firstNameError = document.querySelector("p.error#first-name");
@@ -112,9 +114,12 @@ function validate() {
   const emailError = document.querySelector("p.error#email");
   const dateError = document.querySelector("p.error#date");
 
+  let setReturn = 0;
+
   if (data.title === null) {
     if (!titleError.classList.contains("show"))
       titleError.classList.add("show");
+    setReturn = 1;
   } else {
     titleError.classList.remove("show");
   }
@@ -122,6 +127,7 @@ function validate() {
   if (data.firstName === "") {
     if (!firstNameError.classList.contains("show"))
       firstNameError.classList.add("show");
+    setReturn = 1;
   } else {
     firstNameError.classList.remove("show");
   }
@@ -129,6 +135,7 @@ function validate() {
   if (data.lastName === "") {
     if (!lastNameError.classList.contains("show"))
       lastNameError.classList.add("show");
+    setReturn = 1;
   } else {
     lastNameError.classList.remove("show");
   }
@@ -136,6 +143,7 @@ function validate() {
   if (data.province === "") {
     if (!provinceError.classList.contains("show"))
       provinceError.classList.add("show");
+    setReturn = 1;
   } else {
     provinceError.classList.remove("show");
   }
@@ -143,6 +151,7 @@ function validate() {
   if (!/^(\+971)?[0-9]{9}$/.test(data.number)) {
     if (!numberError.classList.contains("show"))
       numberError.classList.add("show");
+    setReturn = 1;
   } else {
     numberError.classList.remove("show");
   }
@@ -154,13 +163,24 @@ function validate() {
   ) {
     if (!emailError.classList.contains("show"))
       emailError.classList.add("show");
+    setReturn = 1;
   } else {
     emailError.classList.remove("show");
   }
 
   if (data.date === "") {
     if (!dateError.classList.contains("show")) dateError.classList.add("show");
+    setReturn = 1;
   } else {
     dateError.classList.remove("show");
+  }
+
+  return setReturn === 0 ? true : false;
+}
+
+function showModal() {
+  if (validate()) {
+    const modal = document.querySelector("div.modal");
+    modal.classList.add("show");
   }
 }
