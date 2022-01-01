@@ -102,6 +102,15 @@ function discard() {
   data.number = "";
   data.email = "";
   data.date = "";
+
+  document.querySelector("input#mr").checked = false;
+  document.querySelector("input#mrs").checked = false;
+  document.querySelector("input.first-name").value = "";
+  document.querySelector("input.last-name").value = "";
+  document.querySelector("select#province").value = "";
+  document.querySelector("input.phone").value = "";
+  document.querySelector("input.email").value = "";
+  document.querySelector("input.date").value = "";
 }
 
 // Validate fields
@@ -178,9 +187,14 @@ function validate() {
   return setReturn === 0 ? true : false;
 }
 
+// On submit
 function showModal() {
   if (validate()) {
     const modal = document.querySelector("div.modal");
     modal.classList.add("show");
+    discard();
+    setTimeout(() => {
+      modal.classList.remove("show");
+    }, 2000);
   }
 }
