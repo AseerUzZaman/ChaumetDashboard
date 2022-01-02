@@ -76,6 +76,7 @@ p.error.show {
   border-radius: 8px;
   padding: 20px 30px;
   width: 400px;
+  z-index: 10;
 }
 
 .notifications-container.close {
