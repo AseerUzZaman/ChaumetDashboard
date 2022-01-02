@@ -291,15 +291,26 @@ section.tab-content#overview .cards-container .date-card {
   cursor: pointer;
 }
 
-section.tab-content#overview .cards-container .date-card input.date-input {
+section.tab-content#overview .cards-container .date-card #date-card-input-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+section.tab-content#overview .cards-container .date-card #date-card-input-container span {
+  height: 100%;
+}
+
+section.tab-content#overview .cards-container .date-card #date-card-input-container span::before, section.tab-content#overview .cards-container .date-card #date-card-input-container span::after {
+  background-color: transparent;
+}
+
+section.tab-content#overview .cards-container .date-card #date-card-input-container span input#date-card {
   width: 100%;
+  height: 100%;
   cursor: pointer;
-  opacity: 0;
 }
 
 section.tab-content#overview .cards-container .date-card img {

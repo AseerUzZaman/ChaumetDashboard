@@ -41,6 +41,8 @@ currentDate.innerHTML = d.getDate();
 function setDate() {
   const dateText = document.querySelector("#current-date");
   dateText.innerHTML = this.event.target.value.slice(-2);
+
+  console.log("hi");
 }
 
 // Handle title field
@@ -198,3 +200,7 @@ function showModal() {
     }, 2000);
   }
 }
+
+document.getElementById("date-card").addEventListener("change", () => {
+  console.log("hi")
+})
