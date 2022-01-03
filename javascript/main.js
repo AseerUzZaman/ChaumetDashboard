@@ -200,7 +200,3 @@ function showModal() {
     }, 2000);
   }
 }
-
-document.getElementById("date-card").addEventListener("change", () => {
-  console.log("hi")
-})

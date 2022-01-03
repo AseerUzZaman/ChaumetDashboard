@@ -279,51 +279,39 @@ section.tab-content#overview .cards-container {
   margin-top: 20px;
 }
 
-section.tab-content#overview .cards-container .date-card {
-  position: relative;
+section.tab-content#overview .cards-container .date-card-container {
   width: 25%;
   margin-right: 20px;
+  text-align: center;
+}
+
+section.tab-content#overview .cards-container .date-card-container input#date-card {
+  width: 95%;
+  border-radius: 5px;
+  border: 2px solid #d4d4d4;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+section.tab-content#overview .cards-container .date-card-container .date-card {
   border: 2px solid #d4d4d4;
   border-radius: 10px;
   text-align: center;
   color: #132c70;
   padding: 20px 0;
   overflow: hidden;
-  cursor: pointer;
 }
 
-section.tab-content#overview .cards-container .date-card #date-card-input-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-section.tab-content#overview .cards-container .date-card #date-card-input-container span {
-  height: 100%;
-}
-
-section.tab-content#overview .cards-container .date-card #date-card-input-container span::before, section.tab-content#overview .cards-container .date-card #date-card-input-container span::after {
-  background-color: transparent;
-}
-
-section.tab-content#overview .cards-container .date-card #date-card-input-container span input#date-card {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-section.tab-content#overview .cards-container .date-card img {
+section.tab-content#overview .cards-container .date-card-container .date-card img {
   width: 20px;
 }
 
-section.tab-content#overview .cards-container .date-card p#current-date {
+section.tab-content#overview .cards-container .date-card-container .date-card p#current-date {
   font-size: 3rem;
   font-weight: 700;
 }
 
-section.tab-content#overview .cards-container .date-card p.year {
+section.tab-content#overview .cards-container .date-card-container .date-card p.year {
   font-size: 1.5rem;
   font-weight: 700;
 }
