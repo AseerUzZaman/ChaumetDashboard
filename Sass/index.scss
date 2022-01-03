@@ -209,37 +209,35 @@ section.tab-content {
       justify-content: space-between;
       margin-top: 20px;
 
-      .date-card-container {
+      .date-card {
         width: 25%;
         margin-right: 20px;
         text-align: center;
+        border: 2px solid $grey-main;
+        border-radius: 10px;
+        text-align: center;
+        color: $primary-main;
+        padding: 20px 0 5px 0;
+        overflow: hidden;
 
         input#date-card {
-          width: 95%;
+          width: 90%;
           border-radius: 5px;
           border: 2px solid $grey-main;
-          margin-bottom: 5px;
+          margin-top: 5px;
           cursor: pointer;
         }
-        .date-card {
-          border: 2px solid $grey-main;
-          border-radius: 10px;
-          text-align: center;
-          color: $primary-main;
-          padding: 20px 0;
-          overflow: hidden;
 
-          img {
-            width: 20px;
-          }
-          p#current-date {
-            font-size: 3rem;
-            font-weight: 700;
-          }
-          p.year {
-            font-size: 1.5rem;
-            font-weight: 700;
-          }
+        img {
+          width: 20px;
+        }
+        p#current-date {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        p.year {
+          font-size: 1.5rem;
+          font-weight: 700;
         }
       }
       .green-card,
